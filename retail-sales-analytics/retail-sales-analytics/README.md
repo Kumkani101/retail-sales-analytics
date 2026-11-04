@@ -79,26 +79,4 @@ scratch by these four commands.
 - **Visualisation**: interactive Plotly dashboard with KPI header, plus
   publication-style static charts
 
-## Honest scope notes
 
-- The dataset is **simulated** (fixed seed, clearly labelled in the repo). The
-  schema mirrors a real ERP sales extract (billing documents, credit-note
-  returns, promo flags, anonymous walk-ins) so the pipeline ports to real data
-  with a path change.
-- Promo "effectiveness" is inferred from margin differentials; measuring true
-  incrementality needs a controlled test - which is exactly what the solution
-  summary recommends.
-
-## How to talk about this project in interviews
-
-- **"Walk me through it"**: raw flat extract → star schema for stable, extensible
-  reporting → SQL for evidence → dashboard for communication. Emphasise that
-  the schema exists because one-off queries don't scale to new questions.
-- **Design decision you can defend**: returns as negative-quantity fact rows
-  (`FactType`) - keeps revenue measures honest and mirrors how ERPs post
-  credit notes; separate "returns" tables drift out of sync.
-- **Data quality instinct**: you validate loads, not assume them - the build
-  script prints FK checks and a raw-vs-warehouse reconciliation (diff R 0.00).
-- **Business sense**: the best finding is not the most technical one - promo
-  lines earning 40% less margin during flat growth is a board-level question,
-  and the honest answer ("this needs an incrementality test") shows judgment.
