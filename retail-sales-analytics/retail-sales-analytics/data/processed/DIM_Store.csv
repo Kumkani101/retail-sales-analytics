@@ -1,0 +1,9 @@
+StoreKey,StoreName,City,Province,ChannelModel
+S001,Sandton City,Johannesburg,Gauteng,In-store
+S002,Menlyn Park,Pretoria,Gauteng,In-store
+S003,Gateway Durban,Durban,KwaZulu-Natal,In-store
+S004,V&A Waterfront,Cape Town,Western Cape,In-store
+S005,Eastgate,Johannesburg,Gauteng,In-store
+S006,Canal Walk,Cape Town,Western Cape,In-store
+S007,Pavillion Westville,Durban,KwaZulu-Natal,In-store
+S008,Online Warehouse,National,National,Online
