@@ -14,7 +14,7 @@ Retail businesses rarely lack data - they lack **answers they can act on**. The
 brief: *"revenue growth has stalled; find out where margin is being lost."*
 This project walks the full path a data analyst / SAP analytics consultant
 would walk: understand the question → shape the data → answer with evidence →
-recommend.
+recommend. And most importantly be able to take data into a visual model for ease.
 
 ## What's inside
 
